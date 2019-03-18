@@ -1,0 +1,134 @@
+* {  
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  margin: 0 auto;
+  background: rgb(230, 235, 240);  
+  color: #555;
+}
+
+.header_title {
+  background: rgba(218, 132, 33, 0.911);
+  color: #fff;
+  padding: 25px;
+  border-bottom: 2px solid #555;
+  border-top: 2px solid #555;
+}
+
+li {
+  text-decoration: none;  
+}
+
+img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  margin-top: 45px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border-radius: 6px;   
+}
+
+.recipe_page img {
+  height: 500px;
+  width: 500px;
+}
+
+form button{
+  color: rgb(4, 132, 218);
+  margin: 25px auto;  
+}
+
+form button:hover{
+  color: rgb(4, 132, 218);
+  text-decoration: underline;  
+}
+
+h1 {
+  color:brown;
+}
+
+h4 {
+  color: brown;
+}
+
+h5 {
+  color: #555;
+}
+
+h6 {
+  color: #555;
+}
+
+span {
+  color: rgba(218, 132, 33, 0.911);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 75vw;
+  margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80vw;
+  } 
+
+  img {
+    height: 275px;
+    width: 275px;
+    object-fit: cover;
+    margin-top: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 6px;   
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90vw;
+  }
+
+  img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-top: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 6px;   
+  }  
+}
+
+@media only screen and (max-width: 650px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+  }
+
+  img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    margin-top: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 6px;   
+  }
+
+  .recipe_page img {
+    height: 350px;
+    width: 350px;
+  }
+}

@@ -24,19 +24,19 @@ class App extends Component {
     });               
   }
 
-  // Keeps search results in local storage
-  componentDidMount = () => {
-    const json = localStorage.getItem('recipes');
-    const recipes = JSON.parse(json);
-    this.setState({recipes});
-  }
+  // // Keeps search results in local storage
+  // componentDidMount = () => {
+  //   const json = localStorage.getItem('recipes');
+  //   const recipes = JSON.parse(json);
+  //   this.setState({recipes});
+  // }
 
-  componentDidUpdate = () => {
-    // Convert to string for local storage
-    const recipes = JSON.stringify(this.state.recipes);
-    // Local storage keeps search results
-    localStorage.setItem('recipes', recipes);
-  }
+  // componentDidUpdate = () => {
+  //   // Convert to string for local storage
+  //   const recipes = JSON.stringify(this.state.recipes);
+  //   // Local storage keeps search results
+  //   localStorage.setItem('recipes', recipes);
+  // }
 
   render() {
     return (
